@@ -173,6 +173,8 @@ A denylist that must fail when its secret is absent stays in the application rep
 
 Shared files for `jrhimself` repositories live here. [`.github/workflows/ci.yml`](.github/workflows/ci.yml) runs actionlint and zizmor on the workflows in this repository. It does not call `security.yml`. There is no lockfile for OSV and no language for CodeQL to extract.
 
+Every pull request adds its change to [`CHANGELOG.md`](CHANGELOG.md) under the date it is merged.
+
 ## First version
 
 After this change is merged, tag that commit `v1` and publish the release from the GitHub UI or the `gh` CLI. Callers pinned to `@v1` stay dark until that tag exists. Do not tag from the pull request that adds the workflows.
